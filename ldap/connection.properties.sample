@@ -1,0 +1,32 @@
+
+test.username=<<Test_Username>>
+test.password=<<password>>
+
+# Servidor
+es.caib.example.plugins.userinformation.ldap.host_url=ldap://ldap.ibit.org:389
+# Tipus Seguretat
+es.caib.example.plugins.userinformation.ldap.security_authentication=simple
+es.caib.example.plugins.userinformation.ldap.security_principal=[LDAPUSERNAME]
+es.caib.example.plugins.userinformation.ldap.security_credentials=[PASSWORD of LDAPUSERNAME]
+# Directory on estan tots els usuaris
+es.caib.example.plugins.userinformation.ldap.users_context_dn=cn=Users,dc=ibitnet,dc=lan
+# No cercar en subdirectoris
+es.caib.example.plugins.userinformation.ldap.search_scope=onelevel
+# Filtre alternatiu: (&(memberOf=CN=@Oficina,CN=Users,DC=ibitnet,DC=lan)(memberOf=CN=@Negoci,CN=Users,DC=ibitnet,DC=lan))
+es.caib.example.plugins.userinformation.ldap.search_filter=(|(memberOf=CN=@PFI_ADMIN,CN=Users,DC=ibitnet,DC=lan)(memberOf=CN=@PFI_USER,CN=Users,DC=ibitnet,DC=lan))
+es.caib.example.plugins.userinformation.ldap.attribute.username=sAMAccountName
+es.caib.example.plugins.userinformation.ldap.attribute.mail=mail
+es.caib.example.plugins.userinformation.ldap.attribute.administration_id=postOfficeBox
+es.caib.example.plugins.userinformation.ldap.attribute.name=givenName
+# Has de triar:
+#       - "surname1" i "surname2"
+#       - "surname"
+es.caib.example.plugins.userinformation.ldap.attribute.surname=sn
+
+es.caib.example.plugins.userinformation.ldap.attribute.surname1=sn1
+es.caib.example.plugins.userinformation.ldap.attribute.surname2=sn2
+
+es.caib.example.plugins.userinformation.ldap.attribute.telephone=telephoneNumber
+es.caib.example.plugins.userinformation.ldap.attribute.memberof=memberOf
+es.caib.example.plugins.userinformation.ldap.prefix_role_match_memberof=CN=@
+es.caib.example.plugins.userinformation.ldap.suffix_role_match_memberof=,CN=Users,DC=ibitnet,DC=lan

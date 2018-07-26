@@ -1,2 +1,1 @@
-# pluginsib-userinformation
-pluginsib-userinformation
+# pluginsib-userinfo
