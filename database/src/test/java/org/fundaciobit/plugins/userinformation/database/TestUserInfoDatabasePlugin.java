@@ -8,9 +8,9 @@ import java.sql.SQLException;
 import java.util.Arrays;
 import java.util.Properties;
 
-import org.fundaciobit.plugins.userinformation.IUserInformationPlugin;
-import org.fundaciobit.plugins.userinformation.UserInfo;
-import org.fundaciobit.plugins.utils.PluginsManager;
+import org.fundaciobit.pluginsib.userinformation.IUserInformationPlugin;
+import org.fundaciobit.pluginsib.userinformation.UserInfo;
+import org.fundaciobit.pluginsib.core.utils.PluginsManager;
 
 import javax.naming.*;
 
@@ -66,7 +66,7 @@ public class TestUserInfoDatabasePlugin {
       }
       
       
-      org.fundaciobit.plugins.userinformation.RolesInfo rolesInfo = databasePlugin.getRolesByUsername(username);
+      org.fundaciobit.pluginsib.userinformation.RolesInfo rolesInfo = databasePlugin.getRolesByUsername(username);
       if (rolesInfo != null) {
         System.out.println( " ------- rolesInfo(" + username + ") ------- ");
         String[] roles = rolesInfo.getRoles();

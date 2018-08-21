@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.util.Arrays;
 import java.util.Properties;
 
-import org.fundaciobit.plugins.userinformation.UserInfo;
+import org.fundaciobit.pluginsib.userinformation.UserInfo;
 import org.fundaciobit.plugins.userinformation.ldap.LdapUserInformationPlugin;
 
 /**
@@ -52,7 +52,7 @@ public class TestUserInfoLdapPlugin {
       }
       
       
-      org.fundaciobit.plugins.userinformation.RolesInfo rolesInfo = ldap.getRolesByUsername(username);
+      org.fundaciobit.pluginsib.userinformation.RolesInfo rolesInfo = ldap.getRolesByUsername(username);
       if (rolesInfo != null) {
         System.out.println( " ------- rolesInfo(" + username + ") ------- ");
         String[] roles = rolesInfo.getRoles();

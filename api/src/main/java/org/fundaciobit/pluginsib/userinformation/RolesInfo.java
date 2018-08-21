@@ -1,4 +1,4 @@
-package org.fundaciobit.plugins.userinformation;
+package org.fundaciobit.pluginsib.userinformation;
 
 /**
  * 

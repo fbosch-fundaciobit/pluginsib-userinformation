@@ -1,8 +1,8 @@
-package org.fundaciobit.plugins.userinformation;
+package org.fundaciobit.pluginsib.userinformation;
 
 import java.security.cert.X509Certificate;
 
-import org.fundaciobit.plugins.IPlugin;
+import org.fundaciobit.pluginsib.core.IPlugin;
 
 /**
  * 

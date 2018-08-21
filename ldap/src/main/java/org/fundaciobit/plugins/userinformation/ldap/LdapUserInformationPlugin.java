@@ -7,14 +7,14 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 
-import org.fundaciobit.plugins.userinformation.IUserInformationPlugin;
-import org.fundaciobit.plugins.userinformation.RolesInfo;
-import org.fundaciobit.plugins.userinformation.UserInfo;
-import org.fundaciobit.plugins.utils.AbstractPluginProperties;
-import org.fundaciobit.plugins.utils.CertificateUtils;
-import org.fundaciobit.plugins.utils.ldap.LDAPConstants;
-import org.fundaciobit.plugins.utils.ldap.LDAPUser;
-import org.fundaciobit.plugins.utils.ldap.LDAPUserManager;
+import org.fundaciobit.pluginsib.userinformation.IUserInformationPlugin;
+import org.fundaciobit.pluginsib.userinformation.RolesInfo;
+import org.fundaciobit.pluginsib.userinformation.UserInfo;
+import org.fundaciobit.pluginsib.core.utils.AbstractPluginProperties;
+import org.fundaciobit.pluginsib.core.utils.CertificateUtils;
+import org.fundaciobit.pluginsib.utils.ldap.LDAPConstants;
+import org.fundaciobit.pluginsib.utils.ldap.LDAPUser;
+import org.fundaciobit.pluginsib.utils.ldap.LDAPUserManager;
 
 /**
  * 
