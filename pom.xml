@@ -5,7 +5,7 @@
   <version>2.0.0</version>
   <artifactId>pluginsib-userinformation</artifactId>
   <packaging>pom</packaging>
-  <name>PluginsIB - User Information Plugins</name>
+  <name>PluginsIB - User Information</name>
   <modules>
     <module>api</module>
     <module>ldap</module>
